@@ -11,7 +11,7 @@ function func(github_id) {
     };
 
     var Pages = [];
-    for (var i = 1; i < 8; i++) {
+    for (var i = 1; i < 200; i++) {
         var onePage = [];
         xmlhttp.open("GET", url + i, false);
         xmlhttp.send();
@@ -29,7 +29,8 @@ function func(github_id) {
             repo_list.push({
                 name: Pages[j]['name'],
                 stargazers_count: Pages[j]['stargazers_count'],
-                forks_count: Pages[j]['forks_count']
+                forks_count: Pages[j]['forks_count'],
+				html_url: Pages[j]['html_url']
             });
         }
     }
@@ -55,7 +56,9 @@ function func(github_id) {
     for (i = 0; i < repo_list.length; i++) {
         table_td +=
             '<tr>' +
-            '<td>' + repo_list[i].name + '</td>' +
+            '<td><a href="' + repo_list[i].html_url + '"'
+			    + 'target="' + repo_list[i].name + '">' 
+			    + repo_list[i].name + '</a></td>' +
             '<td>' + repo_list[i].stargazers_count + '</td>' +
             '<td>' + repo_list[i].forks_count + '</td>' +
             '</tr>';
