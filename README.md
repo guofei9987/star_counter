@@ -15,7 +15,7 @@ paste this
     function func_1() {
         document.getElementById("star_counter").innerHTML = 'If not print for seconds, please refresh';
         github_id = document.getElementById("user").value;
-        document.getElementById("star_counter").innerHTML = func(github_id);
+        document.getElementById("star_counter").innerHTML = cal_github_star(github_id);
     }
 </script>
 
