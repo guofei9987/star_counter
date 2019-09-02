@@ -1,4 +1,4 @@
-function func(github_id) {
+function cal_github_star(github_id) {
     //1. 读入数据
     //var github_id='guofei9987';
     var url = "https://api.github.com/users/" + github_id + "/repos?page=";
