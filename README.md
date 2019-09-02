@@ -2,9 +2,9 @@
 Count a GitHub user's total stars and forks  
 
 ## put the js on your website 
-[demo1](http://www.guofei.site/2019/08/31/github_star_counter.html)
 
-[demo2](http://www.guofei.site/star_counter/main.html)  
+<a href="http://www.guofei.site/2019/08/31/github_star_counter.html" target="demo1">demo1</a>
+<a href="http://www.guofei.site/star_counter/main.html" target="demo2">demo2</a>
 
 input the github id you want to count, and click the `Calculate` button
 
