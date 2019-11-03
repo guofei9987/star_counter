@@ -10,6 +10,7 @@ Count a GitHub user's total stars and forks
 input the github id you want to count, and click the `Calculate` button
 
 ## demo3
+<html>
 <script>
     function func_1() {
         document.getElementById("star_counter").innerHTML = 'If not print for seconds, please refresh';
@@ -23,7 +24,7 @@ Input github id: <input name="user" value="guofei9987" type="text" id="user">
 <input name="Button" type="button" value="Calculate" onClick="func_1()">
 
 <p id="star_counter"></p>
-
+</html>
 ## Use on your website
 paste this
 ```html
