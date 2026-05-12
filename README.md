@@ -8,6 +8,8 @@ input the github id you want to count, and click the `Calculate` button
 ## Use on your website
 paste this on your website
 ```html
+<script src="http://www.guofei.site/star_counter/star_counter.js"></script>
+
 <script>
     function func_1() {
         document.getElementById("star_counter").innerHTML = 'If not print for seconds, please refresh';
